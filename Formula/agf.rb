@@ -1,22 +1,22 @@
 class Agf < Formula
   desc "AI Agent Session Finder TUI — find, resume, and manage AI coding agent sessions"
   homepage "https://github.com/subinium/agf"
-  version "0.11.1"
+  version "0.11.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/subinium/agf/releases/download/v#{version}/agf-aarch64-apple-darwin.tar.gz"
-      sha256 "3974e3a33315fa790af4001ceda21b21d5780c4e2f37ce5ba26a5fff795b5a89"
+      sha256 "1a7bea378789454fd783b4373fefa4b9a5fe56ca86e4cd5ee46673751479b9b2"
     else
       url "https://github.com/subinium/agf/releases/download/v#{version}/agf-x86_64-apple-darwin.tar.gz"
-      sha256 "9416fe15bf261ff917751df695d8f705d6a14afd60a19f119cc62bb0c2d8d670"
+      sha256 "82d536709c9487f034899d96b984ea2ca8cb46211cf8a6cd8a7d64f0e8c65f8e"
     end
   end
 
   on_linux do
     url "https://github.com/subinium/agf/releases/download/v#{version}/agf-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "845a01b8d77cc9f5956bc92184fd9763b7103a483a7475bd13ec939b6e6f2ade"
+    sha256 "b8d8d1b49d7f31bc82e53f2a6be84867f474b27f48c98128586d09d7cc616da0"
   end
 
   def install
